@@ -24,7 +24,7 @@ const get = function(req, res, value = () => defaultSuccess) {
     if (!req.header('Access-Token')) {
         res.send(buildError({
             code: 0,
-            errCode: 'error$0000001'
+            errCode: 'error$00$0001'
         }))
         return
     }

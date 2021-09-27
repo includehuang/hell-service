@@ -1,3 +1,29 @@
 {
-    "error$0000001": "无token或token失效"
+    "commit-error": "通用错误",
+    "error$0001": "未知错误",
+
+    "commit-error$00": "鉴权错误",
+    "error$00$0001": "无token或token失效",
+
+    "commit-error$01": "web错误",
+    "error$01$0001": "请求的页面不存在",
+
+    "commit-error$02": "账户错误",
+
+    "commit-error$03": "服务器错误",
+
+    "commit-error$04": "接口错误",
+
+    "commit-error$05": "数据库错误",
+
+    "commit-error$06": "网络错误",
+
+    "commit-error$07": "预留",
+
+    "commit-error$08": "预留",
+
+    "commit-error$09": "预留",
+
+    "commit-error$10": "文件错误",
+    "error$10$0001": "指定的文件或目录不存在"
 }
