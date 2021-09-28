@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = './../.' // 相对于主目录的URL
+const baseUrl = './../' // 相对于src目录的URL
 
 // 获取文件，默认UTF-8编码
 const getFile = function (url, code = 'utf-8') {

@@ -1,4 +1,5 @@
-require('./common/database')
+require('module-alias/register')
+require('@common/database')
 const fs = require('fs');
 const path = require('path');
 const express = require('express');

@@ -6,10 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "_moduleAliases": {
+    "@": "./src",
+    "@common": "./src/common",
+    "@database": "./src/database",
+    "@resource": "./src/resource",
+    "@dist": "./dist"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "~4.16.1",
+    "module-alias": "^2.2.2",
     "mysql": "^2.18.1"
   }
 }
