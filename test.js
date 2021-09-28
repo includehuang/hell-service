@@ -13,5 +13,10 @@ api.get('/2', ((req, res) => {
 api.get('/md', ((req, res) => {
     res.send(fs.readFileSync(path.resolve(__dirname, './database/underTheStars/test.txt'), 'utf-8'))
 }))
+api.get('/user', ((req, res) => {
+    global.connect('select * from test', rows => {
+        res.send(rows)
+    })
+}))
 
 module.exports = api
