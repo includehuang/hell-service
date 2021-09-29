@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "~4.16.1",
     "module-alias": "^2.2.2",
     "mysql": "^2.18.1"
