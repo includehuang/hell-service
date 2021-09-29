@@ -6,17 +6,17 @@ module.exports = _bcrypt
 module.exports = bcrypt = {
     saltRounds: saltRounds,
     // 加密
-    hash: async function (password) {
-        return await _bcrypt.hash(password, this.saltRounds)
+    hash: async function (password, salt = this.saltRounds) {
+        return await _bcrypt.hash(password, salt)
     },
     // 同步加密，兼容明文密码
-    hashSync: function (password) {
-        return password.indexOf('$2b') !== 0 && password.indexOf('$2a') !== 0 ? _bcrypt.hashSync(password, this.saltRounds) : password
+    hashSync: function (password, salt = this.saltRounds) {
+        return password.indexOf('$2b') !== 0 && password.indexOf('$2a') !== 0 ? _bcrypt.hashSync(password, salt) : password
     },
     // 比对
     compare: async function(password, hash) {
         hash = this.hashSync(hash)
-        return await _bcrypt.compare(password, hash)
+        return await _bcrypt.compareSync(password, hash)
     },
     /**
      * 加密字符串并处理
