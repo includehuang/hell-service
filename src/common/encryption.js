@@ -14,7 +14,7 @@ module.exports = bcrypt = {
         return password.indexOf('$2b') !== 0 && password.indexOf('$2a') !== 0 ? _bcrypt.hashSync(password, salt) : password
     },
     // 比对
-    compare: async function(password, hash) {
+    compareSync: async function(password, hash) {
         hash = this.hashSync(hash)
         return await _bcrypt.compareSync(password, hash)
     },
