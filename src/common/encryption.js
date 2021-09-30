@@ -47,7 +47,7 @@ module.exports = bcrypt = {
 }
 
 // RSA加密解密
-module.exports = keyRSA = {
+module.exports = RSA = {
     option: {
         b: 512,
     },
