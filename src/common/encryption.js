@@ -45,19 +45,15 @@ const bcrypt = {
 
 // RSA加密解密
 const RSA = {
-    option: {
-        b: 512,
-    },
     key: null,
-    init: function (option) {
-        this.option = option ? option : this.option
-        this.key = new NodeRSA(this.option)
+    init: (option) => {
+        this.key = new NodeRSA(option ? option : {b: 512})
         return this.key
     },
-    encrypt: function (text) {
+    encrypt: (text) => {
         return this.key.encrypt(text, 'base64')
     },
-    decrypt: function (encrypted) {
+    decrypt: (encrypted) => {
         return this.key.decrypt(encrypted, 'utf8')
     }
 }

@@ -11,6 +11,8 @@
     "@common": "./src/common",
     "@database": "./src/database",
     "@resource": "./src/resource",
+    "@utils": "./src/utils",
+    "@api": "./src/api",
     "@dist": "./dist"
   },
   "author": "",

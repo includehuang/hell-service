@@ -16,7 +16,6 @@ const pool = mysql.createPool({
  * @param onError {Function}
  */
 global.connect = (query, onSuccess = () => {}, onError = () => {}) => {
-    console.log(`数据库指令：${query}`)
     pool.getConnection(function(err, connection) {
         if(err){
             onError(err)
