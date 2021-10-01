@@ -10,7 +10,7 @@ const pool = mysql.createPool({
 })
 
 /**
- *
+ * 连接数据库方法
  * @param query {String}
  * @param onSuccess {Function}
  * @param onError {Function}
