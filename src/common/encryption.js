@@ -2,11 +2,8 @@ const _bcrypt = require('bcrypt')
 const saltRounds = 5
 const NodeRSA = require('node-rsa')
 
-// 暴露加密方法
-module.exports = _bcrypt
-
 // bcrypt加密
-module.exports = bcrypt = {
+const bcrypt = {
     saltRounds: saltRounds,
     // 加密
     hash: async function (password, salt = this.saltRounds) {
@@ -47,7 +44,7 @@ module.exports = bcrypt = {
 }
 
 // RSA加密解密
-module.exports = RSA = {
+const RSA = {
     option: {
         b: 512,
     },
@@ -63,4 +60,10 @@ module.exports = RSA = {
     decrypt: function (encrypted) {
         return this.key.decrypt(encrypted, 'utf8')
     }
+}
+
+module.exports = {
+    _bcrypt,
+    bcrypt,
+    RSA
 }
