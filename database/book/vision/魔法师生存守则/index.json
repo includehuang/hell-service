@@ -1,0 +1,94 @@
+{
+    "name": "魔法师生存守则",
+    "author": "Hell Vision",
+    "user": "vision",
+    "time": "2021-10-25",
+    "new": "001$009",
+    "default": "000$001",
+    "data": [
+        {
+            "key": "000",
+            "type": "folder",
+            "title": "魔法师生存守则",
+            "children": [
+                {
+                    "key": "000$001",
+                    "type": "file",
+                    "title": "介绍"
+                },
+                {
+                    "key": "000$002",
+                    "type": "file",
+                    "title": "设定集"
+                },
+                {
+                    "key": "000$003",
+                    "type": "file",
+                    "title": "力量体系"
+                },
+                {
+                    "key": "000$004",
+                    "type": "file",
+                    "title": "主要人物介绍"
+                },
+                {
+                    "key": "000$005",
+                    "type": "file",
+                    "title": "法器介绍"
+                }
+            ]
+        },
+        {
+            "key": "001",
+            "type": "folder",
+            "title": "第一卷",
+            "children": [
+                {
+                    "key": "001$001",
+                    "type": "file",
+                    "title": "第一章 魔法"
+                },
+                {
+                    "key": "001$002",
+                    "type": "file",
+                    "title": "第二章 彗星"
+                },
+                {
+                    "key": "001$003",
+                    "type": "file",
+                    "title": "第三章 忍冬"
+                },
+                {
+                    "key": "001$004",
+                    "type": "file",
+                    "title": "第四章 主角"
+                },
+                {
+                    "key": "001$005",
+                    "type": "file",
+                    "title": "第五章 归风"
+                },
+                {
+                    "key": "001$006",
+                    "type": "file",
+                    "title": "第六章 祎果"
+                },
+                {
+                    "key": "001$007",
+                    "type": "file",
+                    "title": "第七章 应龙"
+                },
+                {
+                    "key": "001$008",
+                    "type": "file",
+                    "title": "第八章 魔血"
+                },
+                {
+                    "key": "001$009",
+                    "type": "file",
+                    "title": "第九章 出发"
+                }
+            ]
+        }
+    ]
+}

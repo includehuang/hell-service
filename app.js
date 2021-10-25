@@ -11,6 +11,7 @@ app.use('/api', apiRoutes);
 app.use(express.static(path.resolve(__dirname, './dist')))
 app.use('/gw', require('@api/gateway'))
 app.use('/public', require('@api/public'))
+app.use('/book', require('@api/book'))
 
 app.get('/', function(req, res) {
     const html = fs.readFileSync(path.resolve(__dirname, './dist/index.html'), 'utf-8')
